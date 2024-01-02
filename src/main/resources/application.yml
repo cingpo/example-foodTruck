@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: FoodTruckSearch
+  thymeleaf:
+    cache: false
+  devtools:
+    restart:
+      enabled: true
+      additional-paths:
+        - src/main/java
+      exclude: static/**,public/**
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:foodtruckdb #jdbc:h2:~/foodtruckdb
+    username: sa
+    password: sa
+#  sql:
+#    init:
+#      mode: ALWAYS
+#      encoding: utf-8
+#      schema-locations:
+#        - classpath:schema.sql
+#      data-locations:
+#        - classpath:data.sql
+  jpa:
+    database: h2
+    hibernate:
+      ddl-auto: none #create-drop
+    show-sql: true
+    generate-ddl: false
+  h2:
+    console:
+      enabled: true
+  flyway:
+    enabled: true
+    clean-disabled: true
+    baseline-on-migrate: true
+    baseline-version: 0
+    locations:
+      - classpath:db/migration/h2

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <h1>Food Truck Search</h1>
+    </div>
+    <form action="/" method="post">
+        <div>
+            <span class="custom-span">
+                <label for="facilityType">Facility Type:</label>
+                <select class="form-select" id="facilityType" name="facilityType">
+                    <option value="Truck" th:selected="${queryListSelect.facilityType == 'Truck'}">Truck</option>
+                    <option value="Push Cart" th:selected="${queryListSelect.facilityType == 'Push Cart'}">Push Cart</option>
+                    <option value="" th:selected="${queryListSelect.facilityType == '' || queryListSelect.facilityType == null}">All</option>
+                </select>
+            </span>
+            <span class="custom-span">
+                <label for="applicant">Applicant:</label>
+                <input type="text" class="form-control" id="applicant" name="applicant" th:value="${queryListSelect.applicant}">
+            </span>
+            <span class="custom-span">
+                <label for="foodItems">Food Items:</label>
+                <input type="text" class="form-control" id="foodItems" name="foodItems" th:value="${queryListSelect.foodItems}">
+            </span>
+        </div>
+        <div style="padding-top: 20px">
+            <button type="submit" style="width: 100px; height: 40px; background: yellow">Search</button>
+        </div>
+    </form>
+    <table border="1">
+        <tr style="background: green">
+            <td>LocationId</td>
+            <td>Applicant</td>
+            <td>FacilityType</td>
+            <td>Address</td>
+            <td>FoodItems</td>
+        </tr>
+        <tr th:each="item: ${list}">
+            <td th:text="${item.locationId}"></td>
+            <td th:text="${item.applicant}"></td>
+            <td th:text="${item.facilityType}"></td>
+            <td th:text="${item.address}"></td>
+            <td th:text="${item.foodItems}"></td>
+        </tr>
+    </table>
+</body>
+</html>
+
+<style>
+    /* 设置 span 元素的宽度 */
+    .custom-span {
+        padding-right: 50px;
+        padding-bottom:
+    }
+</style>
