@@ -1,7 +1,7 @@
 package com.cingpo.foodtruck.service.impl;
 
-import com.cingpo.foodtruck.jopo.MobileFoodFacilityEntity;
-import com.cingpo.foodtruck.jopo.QueryListSelect;
+import com.cingpo.foodtruck.model.MobileFoodFacilityEntity;
+import com.cingpo.foodtruck.model.QueryListSelect;
 import com.cingpo.foodtruck.repository.MobileFoodFacilityRepository;
 import com.cingpo.foodtruck.service.MobileFoodFacilityService;
 import jakarta.annotation.Resource;

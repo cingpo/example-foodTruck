@@ -1,6 +1,6 @@
 package com.cingpo.foodtruck.repository;
 
-import com.cingpo.foodtruck.jopo.MobileFoodFacilityEntity;
+import com.cingpo.foodtruck.model.MobileFoodFacilityEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.stereotype.Repository;
