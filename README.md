@@ -14,7 +14,7 @@
        mvn -v
        ```
    2. add your maven_path/bin into environment variable 'path' if previous step fails
-3. download or git clone the code
+3. download or git clone the code https://gitee.com/cingpo/example-food-truck-search.git
 4. open a terminal and cd to the code's directory
 5. make the jar package
    ```
@@ -26,6 +26,8 @@
    cd target
    java -jar foodtruck-0.0.1-SNAPSHOT.jar
    ```
+8. open url in a browser: http://localhost:8080/
+   ![img.png](img.png)
 
 ### Layout
 The following guides illustrate how to use some features concretely:
