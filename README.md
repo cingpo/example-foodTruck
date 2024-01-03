@@ -30,12 +30,10 @@
 8. open url in a browser: http://localhost:8080/
    ![layout.png](./doc/layout.png)
 
-## Archtecture
-
-### Sequence Diagram
+## Sequence Diagram
 ![sequence-diagram.png](doc/sequence-diagram.png)
 
-### Important Files
+## Important Files
 | File                           |                   Description       | Path |
 | ------------------------------ | ---------------------------------   | ----------- |
 | Mobile_Food_Facility_Permit.csv| will be imported into H2 database   |src\main\resources|
@@ -47,18 +45,20 @@
 | MobileFoodFacilityRepository.java | Repository | src\main\java\com\cingpo\foodtruck\repository |
 | MobileFoodFacilityEntity.java | Entity | src\main\java\com\cingpo\foodtruck\model |
 
-### Next Version Plan
+## Future Plan
 
 I think I missed something. San Francisco's food truck open dataset has alreay provided an API for data search. I don't need to develop the backend API. Importing the cvs into H2 to provide a backend API took me a lot of time, which didn't leave me with much time to implement more frontend functionalities.
 
 
+#### If there is a V2, I maybe make below changes
+* remove H2 and java backend service, use open dataset API directly
+* provide more search conditions in the front page, like states, address, status etc.
+* add a new google map page to display truck location
 
+#### If there is a V3
+* Develop a mobile app
+* Users can search by phone directly
+* Every truck has a score which depends on users' comments.
+* The app will give suggestions to users for food
+* Trucks can advertise on the app 
 
-If there is a V2, I maybe could add below new featrues
-* remove H2 database and java backend service, use open dataset API directly
-
-
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
-* [Handling Form Submission](https://spring.io/guides/gs/handling-form-submission/)
