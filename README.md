@@ -1,4 +1,4 @@
-### Challenge from$\rightarrow$https://github.com/peck/engineering-assessment
+## Challenge from -> https://github.com/peck/engineering-assessment
 
 
 ## How to run it?
