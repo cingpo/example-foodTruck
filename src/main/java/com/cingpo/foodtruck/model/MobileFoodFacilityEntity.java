@@ -1,4 +1,4 @@
-package com.cingpo.foodtruck.jopo;
+package com.cingpo.foodtruck.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

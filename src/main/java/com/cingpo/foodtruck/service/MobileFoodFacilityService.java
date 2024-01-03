@@ -1,7 +1,7 @@
 package com.cingpo.foodtruck.service;
 
-import com.cingpo.foodtruck.jopo.MobileFoodFacilityEntity;
-import com.cingpo.foodtruck.jopo.QueryListSelect;
+import com.cingpo.foodtruck.model.MobileFoodFacilityEntity;
+import com.cingpo.foodtruck.model.QueryListSelect;
 
 import java.util.List;
 

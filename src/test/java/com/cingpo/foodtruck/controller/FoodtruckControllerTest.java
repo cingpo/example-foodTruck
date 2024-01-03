@@ -19,8 +19,8 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.ui.Model;
 
-import com.cingpo.foodtruck.jopo.MobileFoodFacilityEntity;
-import com.cingpo.foodtruck.jopo.QueryListSelect;
+import com.cingpo.foodtruck.model.MobileFoodFacilityEntity;
+import com.cingpo.foodtruck.model.QueryListSelect;
 import com.cingpo.foodtruck.service.MobileFoodFacilityService;
 
 import jakarta.servlet.http.HttpServletRequest;

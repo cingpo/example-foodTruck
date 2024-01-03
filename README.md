@@ -1,9 +1,7 @@
-## Challenge from$\rightarrow$https://github.com/peck/engineering-assessment
+### Challenge from$\rightarrow$https://github.com/peck/engineering-assessment
 
 
-# Getting Started
-
-### How to run it?
+## How to run it?
 1. Install jdk17
    1. install jdk17 on your computer https://www.oracle.com/cn/java/technologies/downloads/#jdk17-windows
    2. use below command to check your jdk version
@@ -30,13 +28,37 @@
    java -jar foodtruck-0.0.1-SNAPSHOT.jar
    ```
 8. open url in a browser: http://localhost:8080/
-   ![img.png](img.png)
+   ![layout.png](./doc/layout.png)
 
-### Layout
-The following guides illustrate how to use some features concretely:
+## Archtecture
+
+### Sequence Diagram
+![sequence-diagram.png](doc/sequence-diagram.png)
+
+### Important Files
+| File                           |                   Description       | Path |
+| ------------------------------ | ---------------------------------   | ----------- |
+| Mobile_Food_Facility_Permit.csv| will be imported into H2 database   |src\main\resources|
+| index.html   | frontend search page  | src\main\resources\templates  |
+| V1__H2_MOBILE_FOOD_FACILITIES_PERMIT.sql | flyway db migration | src\main\resources\db\migration\h2 |
+| FoodtruckApplication.java | Main Class | src\main\java\com\cingpo\foodtruck |
+| FoodtruckController.java | Controller | src\main\java\com\cingpo\foodtruck\controller |
+| MobileFoodFacilityServiceImpl.java | Service | src\main\java\com\cingpo\foodtruck\service\impl |
+| MobileFoodFacilityRepository.java | Repository | src\main\java\com\cingpo\foodtruck\repository |
+| MobileFoodFacilityEntity.java | Entity | src\main\java\com\cingpo\foodtruck\model |
+
+### Next Version Plan
+
+I think I missed something. San Francisco's food truck open dataset has alreay provided an API for data search. I don't need to develop the backend API. Importing the cvs into H2 to provide a backend API took me a lot of time, which didn't leave me with much time to implement more frontend functionalities.
+
+
+
+
+If there is a V2, I maybe could add below new featrues
+* remove H2 database and java backend service, use open dataset API directly
+
 
 * [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
 * [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
 * [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
 * [Handling Form Submission](https://spring.io/guides/gs/handling-form-submission/)
-

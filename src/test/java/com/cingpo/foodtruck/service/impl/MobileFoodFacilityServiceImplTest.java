@@ -17,8 +17,8 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.data.jpa.domain.Specification;
 
-import com.cingpo.foodtruck.jopo.MobileFoodFacilityEntity;
-import com.cingpo.foodtruck.jopo.QueryListSelect;
+import com.cingpo.foodtruck.model.MobileFoodFacilityEntity;
+import com.cingpo.foodtruck.model.QueryListSelect;
 import com.cingpo.foodtruck.repository.MobileFoodFacilityRepository;
 
 public class MobileFoodFacilityServiceImplTest {
